@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #faf5ff;
+  --primary-text-color: #9333ea;
+  --icon-button-color: #60a5fa;
+  --secondary-text-color: #1d4ed8;
+}
+
+input,
+button,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
+  opacity: 90%;
+}
+.todo-box {
+  width: 350px;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+}
+.todo-input {
+  width: 88%;
+  border: 2px solid var(--icon-button-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 0 8px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+}
+.add-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--icon-button-color);
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .todo-content {
+  
+} */
+.todo-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  margin: 8px 0;
+  color: var(--secondary-text-color);
+  background: var(--icon-button-color);
+  height: 35px;
+  border-radius: 5px;
+}
+.todo-task-checked {
+  opacity: 50%;
+  
+}
+.fa-trash-can,
+.fa-square-check {
+  cursor: pointer;
+  padding: 9px 3px;
+}
